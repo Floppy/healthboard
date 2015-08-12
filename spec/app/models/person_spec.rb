@@ -1,4 +1,4 @@
-describe Person do
+describe Person, :vcr do
 
   before :all do
     @person = Person.instance

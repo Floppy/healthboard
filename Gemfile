@@ -9,6 +9,8 @@ group :development, :test do
   gem "rspec"
   gem "rack-test"
   gem "coveralls"
+  gem "vcr"
+  gem "webmock"
 end
 
 group :development do
