@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 require File.join(File.dirname(__FILE__), '..', 'app', 'app.rb')
 
 require 'sinatra'
