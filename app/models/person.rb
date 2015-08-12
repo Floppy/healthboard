@@ -8,7 +8,7 @@ class Person
   
   # Today's step count
   def steps
-    
+    $fitbit.activities_on_date('today')["summary"]["steps"]
   end
   
 end

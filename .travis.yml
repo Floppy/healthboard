@@ -3,3 +3,8 @@ sudo: false
 cache: bundler
 rvm:
 - 2.2.2
+env:
+- FITBIT_CONSUMER_KEY=abc123
+- FITBIT_CONSUMER_SECRET=def456
+- FITBIT_USER_TOKEN=a1b2c3
+- FITBIT_USER_SECRET=d4e5f6

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/-/activities/date/2015-08-12.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fitgem gem v0.12.1 (OAuth gem v0.4.7)
+      Accept-Language:
+      - en_US
+      Accept-Locale:
+      - en_US
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Authorization:
+      - OAuth oauth_consumer_key="<FITBIT_CONSUMER_KEY>", oauth_nonce="yldWUT9mJHlm9JKizjFjhu3FPZRqZUpLL9DFkYQeJfk",
+        oauth_signature="0UhO4jSztmHQ9I3Ke%2F%2F%2F8DAPB9A%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1439398366", oauth_token="<FITBIT_USER_TOKEN>", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '133'
+      Fitbit-Rate-Limit-Reset:
+      - '452'
+      Set-Cookie:
+      - JSESSIONID=AC5CF9695C958C863561BAD9D04F02AC.fitbit1; Path=/; HttpOnly
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Wed, 12 Aug 2015 16:52:27 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"activities":[],"goals":{"activeMinutes":30,"caloriesOut":2500,"distance":4.97,"floors":40,"steps":10000},"summary":{"activeScore":-1,"activityCalories":479,"caloriesBMR":1621,"caloriesOut":1931,"distances":[{"activity":"total","distance":0.22},{"activity":"tracker","distance":0.22},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0},{"activity":"moderatelyActive","distance":0},{"activity":"lightlyActive","distance":0.22},{"activity":"sedentaryActive","distance":0}],"elevation":50,"fairlyActiveMinutes":0,"floors":5,"lightlyActiveMinutes":112,"marginalCalories":212,"sedentaryMinutes":394,"steps":471,"veryActiveMinutes":0}}'
+    http_version: 
+  recorded_at: Wed, 12 Aug 2015 16:52:47 GMT
+recorded_with: VCR 2.9.3
