@@ -1,4 +1,8 @@
+$: << File.dirname(__FILE__) + "/models"
+
 require 'sinatra/base'
+
+require "person"
 
 class HealthBoardApp < Sinatra::Base
   
