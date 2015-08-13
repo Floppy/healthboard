@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/-/body/date/2015-08-13.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fitgem gem v0.12.1 (OAuth gem v0.4.7)
+      Accept-Language:
+      - en_US
+      Accept-Locale:
+      - en_US
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Authorization:
+      - OAuth oauth_consumer_key="<FITBIT_CONSUMER_KEY>", oauth_nonce="yfX3JD7iOYCW9yZEgIw0MBvhPfgywwqeNr6ffudjL6I",
+        oauth_signature="E7qUti8%2FWfKW5fig5TNqqpdfbzw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1439502601", oauth_token="<FITBIT_USER_TOKEN>", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '149'
+      Fitbit-Rate-Limit-Reset:
+      - '619'
+      Set-Cookie:
+      - JSESSIONID=D4695CCAC0E59DA6147D47836D206259.fitbit1; Path=/; HttpOnly
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Thu, 13 Aug 2015 21:49:40 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"body":{"bicep":0,"bmi":35.35,"calf":0,"chest":0,"fat":0,"forearm":0,"hips":0,"neck":0,"thigh":0,"waist":0,"weight":266.7},"goals":{"fat":20,"weight":187.39}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 21:50:05 GMT
+recorded_with: VCR 2.9.3

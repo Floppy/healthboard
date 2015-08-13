@@ -11,4 +11,21 @@ class Person
     $fitbit.activities_on_date('today')["summary"]["steps"]
   end
   
+  # Today's weight
+  def weight
+    lb_to_kg $fitbit.body_measurements_on_date('today')["body"]["weight"]
+  end
+  
+  # Today's BMI
+  def bmi
+    $fitbit.body_measurements_on_date('today')["body"]["bmi"]
+  end
+  
+  
+  private
+  
+  def lb_to_kg(lb)
+    lb * 0.45359237
+  end
+  
 end
