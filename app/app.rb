@@ -25,7 +25,8 @@ $fitbit.reconnect(JiffyBag["FITBIT_USER_TOKEN"], JiffyBag["FITBIT_USER_SECRET"])
 class HealthBoardApp < Sinatra::Base
   
   get "/" do
-    "Today's steps: #{Person.instance.steps}"
+    @person = Person.instance
+    erb :index
   end
 
   # start the server if ruby file executed directly

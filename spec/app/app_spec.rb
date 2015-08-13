@@ -1,6 +1,14 @@
 describe HealthBoardApp do
 
-  it "should respond to GET" do
+  it "should have bootstrap CSS" do
+    # Stubs
+    allow(Person.instance).to receive(:steps).and_return(42)
+    # Test
+    get '/'
+    expect(last_response.body).to match(/bootstrap.min.css/)
+  end
+
+  it "should show some data" do
     # Stubs
     allow(Person.instance).to receive(:steps).and_return(42)
     # Test
