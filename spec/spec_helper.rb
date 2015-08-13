@@ -5,6 +5,7 @@ require File.join(File.dirname(__FILE__), '..', 'app', 'app.rb')
 
 require 'sinatra'
 require 'rack/test'
+require 'timecop'
 
 # setup test environment
 set :environment, :test
