@@ -10,9 +10,10 @@ describe Person, :vcr do
     end
   end
   
-  it "should get a latest weight count" do
+  it "should get a latest weight in kg" do
     Timecop.freeze(2015,8,13) do
-      expect(@person.weight).to be_within(0.1).of(121.0)
+      expect(@person.weight.value).to be_within(0.1).of(121)
+      expect(@person.weight.unit.name).to eq("kilogram")
     end
   end
 

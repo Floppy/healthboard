@@ -1,6 +1,9 @@
 require 'singleton'
+require 'quantify'
+require 'memoist'
 
 class Person
+  extend Memoist
   
   # For now, there is only one Person
   # We do it this way so we can extend to many people in future
@@ -10,22 +13,18 @@ class Person
   def steps
     $fitbit.activities_on_date('today')["summary"]["steps"]
   end
+  memoize :steps
   
   # Today's weight
   def weight
-    lb_to_kg $fitbit.body_measurements_on_date('today')["body"]["weight"]
+    $fitbit.body_measurements_on_date('today')["body"]["weight"].lb.to_kg
   end
+  memoize :weight
   
   # Today's BMI
   def bmi
     $fitbit.body_measurements_on_date('today')["body"]["bmi"]
   end
-  
-  
-  private
-  
-  def lb_to_kg(lb)
-    lb * 0.45359237
-  end
-  
+  memoize :bmi
+    
 end

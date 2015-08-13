@@ -4,6 +4,8 @@ gem "rake"
 gem "sinatra", "~> 1.4"
 gem 'jiffybag', github: "theodi/jiffybag"
 gem "fitgem", "~> 0.12.1"
+gem "quantify"
+gem "memoist"
 
 group :development, :test do
   gem "rspec"
