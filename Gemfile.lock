@@ -73,7 +73,7 @@ GEM
     quantify (3.2.1)
       activesupport (~> 3.0)
       i18n
-    rack (1.6.4)
+    rack (1.6.11)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
