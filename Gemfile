@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "rake"
-gem "sinatra", "~> 1.4"
+gem "sinatra", "~> 2.0"
 gem 'jiffybag', github: "theodi/jiffybag"
 gem "fitgem", "~> 0.12.1"
 gem "quantify"
