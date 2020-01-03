@@ -52,7 +52,7 @@ GEM
     json (2.2.0)
     launchy (2.4.3)
       addressable (~> 2.3)
-    memoist (0.16.1)
+    memoist (0.16.2)
     multi_json (1.13.1)
     multipart-post (2.1.1)
     mustermann (1.0.3)
