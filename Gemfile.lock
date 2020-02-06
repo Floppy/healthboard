@@ -114,7 +114,7 @@ GEM
       typhoeus (~> 0.6, >= 0.6.8)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
-    vcr (5.0.0)
+    vcr (5.1.0)
     webmock (3.8.1)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
